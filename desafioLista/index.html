@@ -1,42 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Lista de Tareas</title>
-  <style>
-    .completed {
-      text-decoration: line-through;
-    }
-    body {
-        background-color: darkcyan;
-    }
-    #clear-button {
-        color: crimson;
-    }
-    button {
-        color: rgb(67, 157, 18);
-    }
-    
-    .warning {
-      color: red;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <h1>Lista de Tareas</h1>
-  
-  <form id="todo-form">
-    <input type="text" id="todo-input" placeholder="Ingrese una nueva tarea">
-    <button type="submit">Agregar</button>
-  </form>
-  
-  <ul id="todo-list">
-  </ul>
-  
-  <button id="clear-button">Borrar todas las tareas</button>
-  
-  <p id="warning-message" class="warning"></p>
-  
-  <script src="js/dom.js"></script>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/ejercicio_5/assets/css/style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h1>Lista de tareas</h1>
+      <input type="text" id="tarea" placeholder="Agrega una tarea..." />
+      <button id="agregar">Agregar</button>
+      <button id="borrar">Borrar lista</button>
+      <p id="error"></p>
+      <ol></ol>
+   </body>
+   <script src="/js/app.js"></script>
 </html>
