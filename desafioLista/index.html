@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Tareas</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+    body {
+        background-color: darkcyan;
+    }
+    #clear-button {
+        color: crimson;
+    }
+    button {
+        color: rgb(67, 157, 18);
+    }
+    
+    .warning {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Tareas</h1>
+  
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Ingrese una nueva tarea">
+    <button type="submit">Agregar</button>
+  </form>
+  
+  <ul id="todo-list">
+  </ul>
+  
+  <button id="clear-button">Borrar todas las tareas</button>
+  
+  <p id="warning-message" class="warning"></p>
+  
+  <script src="js/dom.js"></script>
+</body>
+</html>
