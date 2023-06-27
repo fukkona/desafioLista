@@ -4,7 +4,6 @@ const lista = document.getElementById('todo-list');
 
 
 
-const listaTareas = document.getElementById('todo-list');
 const botonBorrar = document.getElementById('clear-button');
 
 botonBorrar.addEventListener('click', function () {
